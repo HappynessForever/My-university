@@ -45,7 +45,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileOutputStreamDemo {
+public class Demo {
 	public static void main(String[] args) {
 		FileInputStream fis = null;
 		try {
@@ -102,7 +102,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileOutputStreamDemo {
+public class Demo {
 	public static void main(String[] args) {
 		FileOutputStream fos = null;
 		try {
