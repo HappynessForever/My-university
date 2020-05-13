@@ -9,8 +9,8 @@
 ## IO流分类
 
 - 按照数据流向（从程序的角度来看，文件上的内容输入到程序，故是输入流，反之是输出流）
-  - 输入流 读入数据（文件输入到程序）InputStream、Reader
-  - 输出流 写入数据（程序输出到文件）OutputStream、Writer
+  - 输入流 读入数据（文件输入到程序）InputStream、Reader（站在人的角度就是读文件）
+  - 输出流 写入数据（程序输出到文件）OutputStream、Writer（写文件）
 
 - 按照数据类型
   - 字节流
