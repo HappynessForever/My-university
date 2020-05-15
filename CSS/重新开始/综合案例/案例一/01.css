@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	/*注意和页面相匹配*/
+	color: #673929;
+}
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 200px;
+	margin-bottom: 5px;
+	background: skyblue;
+	position: relative;
+}
+#icon-list {
+	position: absolute;
+	top: 40px;
+	right: 30px;
+	font-size: 0;
+}
+#nav {
+	height: 30px;
+	margin-bottom: 5px;
+	background-color: #0099CC;
+	
+	font-size: 18px;
+	line-height: 30px;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#nav ul {
+	list-style: none;
+}
+#nav ul li {
+	list-style: none;
+	display: inline-block;
+	width: 70px;
+}
+#nav ul li a {
+	text-decoration: none;
+}
+a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: yellow;
+}
+a:active {
+	color: yellow;
+}
+#main {
+}
+
+#aside {
+	float: left;
+	width: 300px;
+	height: 500px;
+	background: #66CCFF;
+	text-align: center;
+	font-size: 14px;
+}
+#aside h2 {
+	margin: 5px;
+	padding: 5px;
+}
+#content {
+	float: right;
+	width: 595px;
+	margin-bottom: 5px;
+	background-color: #CCFFFF;
+}
+
+.subcon {
+	width: 570px;
+	margin: 10px auto;
+	clear: both;
+}
+.subcon img {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	border: 1px dashed #000;
+	
+	height: 300px;
+	width: 200px;
+}
+.subcon .subtext {
+	/*文字宽度*/
+	width: 40%;	
+	float: left;
+	margin: 5px;
+}
+.subcon h2 {
+	margin: 5px;
+}
+.subcon p {
+	font: 16px/2em;
+}
+#footer {
+	height: 60px;
+	line-height: 60px;
+	background-color: #c6f;
+	clear: both;
+	
+	text-align: center;
+}
+
+#l-fix {
+	position: fixed;
+	top: 100px;
+	left: 5px;
+}

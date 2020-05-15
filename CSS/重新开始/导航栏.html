@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*需求：制作一个简易的水平导航栏*/
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			nav {
+				margin: 0 auto;
+				width: 300px;
+				font-size: 0;
+			}
+			
+			a {				
+				/* 定义行内标签a改为行内块级标签*/
+				display: inline-block;
+				width: 80px;
+				height: 30px;
+				border-bottom: 1px solid #ccc;
+				
+				/*超连接文本*/
+				font-size: 14px;
+				text-align: center;
+				line-height: 30px;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: white;
+				background-color: #CCCCCC;
+				border: 1px solid;
+				border-left-color: orange;
+				border-top-color: orange;
+				border-right-color: orange;
+			}
+			/*父元素定义font-size:0 去掉行内块元素水平方向空白；子元素定义vertical-align 属性去掉行内块元素垂直方向空白*/
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="#">连接1</a>
+			<a href="#">连接2</a>
+			<a href="#">连接3</a>
+		</nav>
+	</body>
+</html>

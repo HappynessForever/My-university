@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#container{
+		width: 600px;
+		height: 1500px;
+		background-color: #ccc;
+		margin: 0 auto;
+	}
+    #fix-left{
+	    left:100px;	       
+	}
+	#fix-right{
+	    right:100px; 
+	}
+	.fix{
+	    width:100px;
+	    height:100px;		
+	    border:2px red solid;	
+	    position:fixed;
+	    top:50px; 
+	}
+	.fix img{
+		width: 100px;
+		height: 100px;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, delectus pariatur ipsa minima dolores facere quas neque sequi. Dolor, suscipit quisquam incidunt quas perferendis magnam quod temporibus aliquid saepe officia.</p>
+		<div id="fix-left" class="fix"><img src="1.jpg" alt=""></div>
+		<div id="fix-right" class="fix"><img src="2.jpg" alt=""></div></div>
+    </div>
+</body>
+</html>
