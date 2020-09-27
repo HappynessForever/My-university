@@ -122,3 +122,46 @@ public enum Direction {
 - int ordinal（）
 - <T> T valueOf(Class<T> type, String name)
 - values()
+
+
+
+输出：Hello World
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		changliang();
+		zifuchuan("apples");
+		sum();
+	}
+	
+	static void changliang() {
+		final double PI = 3.14;
+		System.out.println(PI);
+	}
+	
+	static void zifuchuan(String str) {
+		System.out.println("字符串长度为：" + str.length());
+		System.out.println(str.equals("apples"));
+		System.out.println(str.concat("lvjun"));
+		System.out.println(str.charAt(0));
+		System.out.println(str.indexOf("apples"));
+		System.out.println(str.substring(1));
+	}
+	
+	static void sum() {
+		Scanner in = new Scanner(System.in);
+		
+		int a = in.nextInt();
+		int b = in.nextInt();
+		
+		in.close();
+		System.out.println("a+b=" + (a + b));
+	}
+}
+
+```
+

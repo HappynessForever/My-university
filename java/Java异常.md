@@ -148,3 +148,60 @@ public class ExceptionDemo extends Exception {
 - 子类覆盖父类方法时，子类方法必须抛出相同的异常或父类异常的子类。（父亲坏了，儿子不能比父亲更坏）
 - 子类不能抛出父类没有的异常
 - 如果被覆盖的方法没有异常抛出，那么子类的方法绝对不可以抛出异常，如果子列方法内有异常发生，那么子类只能throws。
+
+抛出异常
+
+```java
+public class ThrowTest {
+
+    public static void main(String[] args) {
+        Integer a = 1;
+        Integer b = null;
+        //当a或者b为null时，抛出异常
+        if (a == null || b == null) {
+            throw new NullPointerException();
+        } else {
+            System.out.println(a + b);
+        }
+    }
+}
+```
+
+异常匹配
+
+```java
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class MultipleCapturesDemo {
+    public static void main(String[] args) {
+        try {
+            new FileInputStream("");
+        } catch (FileNotFoundException e) {
+            System.out.println("IO 异常");
+        } catch (Exception e) {
+            System.out.println("发生异常");
+        }
+    }
+}
+```
+
+自定义异常（基础Exception或其子类）
+
+```java
+// MyAriException.java
+public class MyAriException extends ArithmeticException {
+    //自定义异常类，该类继承自ArithmeticException
+
+    public MyAriException() {
+
+    }
+    //实现默认的无参构造方法
+
+    public MyAriException(String msg) {
+        super(msg);
+    }
+    //实现可以自定义输出信息的构造方法，将待输出信息作为参数传入即可
+}
+```
+
